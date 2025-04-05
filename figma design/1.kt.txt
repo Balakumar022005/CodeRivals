@@ -1,0 +1,189 @@
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.requiredHeight
+import androidx.compose.foundation.layout.requiredWidth
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+@Composable
+fun AndroidCompact3(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 412.dp)
+                .requiredHeight(height = 917.dp)
+                .background(color = Color.White)
+        ) {
+        Image(
+            painter = painterResource(id = R.drawable.img_14cb3c48d94d422b81806733f6b8222f1),
+            contentDescription = "14cb3c48-d94d-422b-8180-6733f6b8222f 1",
+            modifier = Modifier
+                        .requiredWidth(width = 412.dp)
+                        .requiredHeight(height = 917.dp))
+        Column(
+            verticalArrangement = Arrangement.spacedBy(13.dp, Alignment.Top),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 87.dp,
+                                    y = 97.dp)
+                        .requiredWidth(width = 237.dp)
+            ) {
+            Surface(
+                shape = RoundedCornerShape(20.dp),
+                color = Color(0xfff1891a),
+                border = BorderStroke(4.dp, Color(0xff59431d)),
+                modifier = Modifier
+                                .clip(shape = RoundedCornerShape(20.dp))
+                ) {
+                Box(
+                    modifier = Modifier
+                                        .requiredWidth(width = 237.dp)
+                                        .requiredHeight(height = 101.dp)
+                    ) {
+                    Text(
+                        text = "GAMES",
+                        color = Color.White,
+                        textAlign = TextAlign.Center,
+                        style = MaterialTheme.typography.displayMedium,
+                        modifier = Modifier
+                                                .align(alignment = Alignment.TopCenter)
+                                                .offset(x = 0.5.dp,
+                                                                        y = 35.dp)
+                                                .border(border = BorderStroke(1.dp, Color.Black)))
+                    }
+                }
+            Surface(
+                shape = RoundedCornerShape(20.dp),
+                color = Color(0xff10a39d),
+                border = BorderStroke(4.dp, Color(0xff59431d)),
+                modifier = Modifier
+                                .clip(shape = RoundedCornerShape(20.dp))
+                ) {
+                Box(
+                    modifier = Modifier
+                                        .requiredWidth(width = 237.dp)
+                                        .requiredHeight(height = 101.dp)
+                    ) {
+                    Text(
+                        text = "dashboard",
+                        color = Color.White,
+                        textAlign = TextAlign.Center,
+                        style = TextStyle(
+                                                fontSize = 40.sp),
+                        modifier = Modifier
+                                                .align(alignment = Alignment.TopCenter)
+                                                .offset(x = 1.dp,
+                                                                        y = 35.dp)
+                                                .border(border = BorderStroke(1.dp, Color.Black)))
+                    }
+                }
+            Surface(
+                shape = RoundedCornerShape(20.dp),
+                color = Color(0xff10a39d),
+                border = BorderStroke(4.dp, Color(0xff59431d)),
+                modifier = Modifier
+                                .clip(shape = RoundedCornerShape(20.dp))
+                ) {
+                Box(
+                    modifier = Modifier
+                                        .requiredWidth(width = 237.dp)
+                                        .requiredHeight(height = 101.dp)
+                    ) {
+                    Text(
+                        text = "QUIZ",
+                        color = Color.White,
+                        textAlign = TextAlign.Center,
+                        style = TextStyle(
+                                                fontSize = 40.sp),
+                        modifier = Modifier
+                                                .align(alignment = Alignment.TopCenter)
+                                                .offset(x = 0.5.dp,
+                                                                        y = 35.dp)
+                                                .border(border = BorderStroke(1.dp, Color.Black)))
+                    }
+                }
+            }
+        Surface(
+            shape = RoundedCornerShape(16.dp),
+            color = Color(0xff81591c),
+            border = BorderStroke(6.dp, Color(0xff59431d)),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 14.dp,
+                                    y = 749.dp)
+                        .clip(shape = RoundedCornerShape(16.dp))
+            ) {
+            Box(
+                modifier = Modifier
+                                .requiredWidth(width = 146.dp)
+                                .requiredHeight(height = 80.dp)
+                ) {
+                Text(
+                    text = "LOGOUT",
+                    color = Color.White,
+                    textAlign = TextAlign.Center,
+                    style = TextStyle(
+                                        fontSize = 35.sp),
+                    modifier = Modifier
+                                        .align(alignment = Alignment.TopStart)
+                                        .offset(x = 13.dp,
+                                                            y = 28.dp)
+                                        .requiredWidth(width = 124.dp)
+                                        .border(border = BorderStroke(1.dp, Color.Black)))
+                }
+            }
+        Surface(
+            shape = RoundedCornerShape(16.dp),
+            color = Color(0xffec831a),
+            border = BorderStroke(6.dp, Color(0xff9e5b00)),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 206.dp,
+                                    y = 749.dp)
+                        .clip(shape = RoundedCornerShape(16.dp))
+            ) {
+            Box(
+                modifier = Modifier
+                                .requiredWidth(width = 189.dp)
+                                .requiredHeight(height = 80.dp)
+                ) {
+                Text(
+                    text = "QUITGAME",
+                    color = Color.White,
+                    textAlign = TextAlign.Center,
+                    style = TextStyle(
+                                        fontSize = 35.sp),
+                    modifier = Modifier
+                                        .align(alignment = Alignment.TopStart)
+                                        .offset(x = 13.dp,
+                                                            y = 28.dp)
+                                        .requiredWidth(width = 167.dp)
+                                        .border(border = BorderStroke(1.dp, Color.Black)))
+                }
+            }
+        }
+ }
+
+@Preview(widthDp = 412, heightDp = 917)
+@Composable
+private fun AndroidCompact3Preview() {
+    AndroidCompact3(Modifier)
+ }
